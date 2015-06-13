@@ -1,1 +1,1 @@
-include ':app', ':MaterialNavigationDrawerModule', ':library', ':ultimaterecyclerview'
+include ':app', ':MaterialNavigationDrawerModule', ':library'

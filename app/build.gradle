@@ -32,7 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.google.android.gms:play-services:7.3.0'
     compile 'jp.seesaa.android:datetimepicker:0.1.0'
-    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.4'
     compile files('libs/NCMB.jar')
     compile files('libs/jetty-util-6.1.26.jar')
     compile files('libs/jetty-6.1.26.jar')
