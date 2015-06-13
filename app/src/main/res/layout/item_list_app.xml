@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:text=""
+            android:background="#F5B755"
+            android:id="@+id/backg" />
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="55dp"
+            android:text=""
+            android:layout_marginLeft="6dp"
+            android:background="#ffffff"
+            android:id="@+id/onTopBackg"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="244dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="name"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_gravity="right|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:id="@+id/day"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:15"
+            android:id="@+id/time"
+            android:layout_gravity="left|center_vertical"
+            android:layout_toLeftOf="@id/day"
+            android:paddingLeft="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/background_material_dark"
+            android:singleLine="true" />
+
+
+    </FrameLayout>
+
+    <!--
+        <ImageView
+            android:id="@+id/dayIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher" />
+    -->
+
+
+</RelativeLayout>

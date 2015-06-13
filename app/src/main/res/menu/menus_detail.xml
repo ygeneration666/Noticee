@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <!-- 保存 -->
+    <item
+        android:id="@+id/menu_save"
+        android:title="OK"
+        yourapp:showAsAction="always|withText"/>
+<!--
+    <item
+        android:id="@+id/overflow_options"
+        android:icon="@drawable/"
+        android:title="Menu"
+        yourapp:showAsAction="always">
+        <menu>
+
+≈            <item
+                android:id="@+id/menu_share_by_browser"
+                android:icon="@drawable/icon32_dummy_space"
+                android:title="ブラウザで開く"
+                yourapp:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_show_url"
+                android:icon="@drawable/icon32_dummy_space"
+                android:title="URLの確認"
+                yourapp:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_text_find_start"
+                android:icon="@drawable/icon32_dummy_space"
+                android:title="ページ内検索"
+                yourapp:showAsAction="never"/>
+            ...
+        </menu>
+    </item>
+-->
+</menu>

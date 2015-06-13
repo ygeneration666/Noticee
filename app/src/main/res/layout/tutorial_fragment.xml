@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/noticee"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/logonotice" />
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noticee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="notieeがあなたのTODOリストを作ります"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/swipe_image"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/introduction"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/swipe" />
+
+    <ImageView
+        android:id="@+id/signInWithFaceBooks"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/fblogin"
+        android:layout_below="@+id/noticee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/signInWithgoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/googlelogin"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signInWithFaceBooks"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

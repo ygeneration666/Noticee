@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+    <EditText
+        android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_todo"
+            android:hint = "TODOを入力"
+            android:textColorHint="#B8B8B8"
+            android:textColor="#B8B8B8"
+            android:layout_gravity="center_horizontal|top"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:cursorVisible="true"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/abc_input_method_navigation_guard"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@color/background_floating_material_dark"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:layout_above="@+id/datePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="日付を選択する"
+        android:textColor="@color/background_floating_material_dark"
+        android:textSize="20sp"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/title_todo"
+        android:layout_alignLeft="@+id/title_todo"
+        android:layout_alignStart="@+id/title_todo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="時間を選択する"
+        android:textColor="@color/background_floating_material_dark"
+        android:textSize="20sp"
+        android:id="@+id/timePicker"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignTop="@+id/datePicker"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/divider1"
+        android:background="@color/background_floating_material_dark"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignLeft="@+id/title_todo"
+        android:layout_alignStart="@+id/title_todo"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Push 通知"
+        android:textColor="@color/background_floating_material_dark"
+        android:textSize="20sp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/divider1"
+        android:layout_alignLeft="@+id/datePicker"
+        android:layout_alignStart="@+id/datePicker"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:background="@color/background_floating_material_dark"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/memo"
+        android:hint = "メモ"
+        android:textColorHint="#B8B8B8"
+        android:textColor="#B8B8B8"
+        android:lines="10"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="top|left"
+        android:layout_alignParentEnd="false"
+        android:layout_alignRight="@+id/timePicker"
+        android:layout_alignEnd="@+id/timePicker"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:checked="true"
+        android:shadowColor="#F5B755"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignRight="@+id/memo"
+        android:layout_alignEnd="@+id/memo"
+        android:singleLine="false" />
+
+
+</RelativeLayout>

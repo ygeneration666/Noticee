@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <co.labots.noticee.module.swipeListView.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:id="@+id/ultimate_recycler_view"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:recyclerviewClipToPadding="true"
+            app:recyclerviewPadding="2dp">
+        </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+    -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/widget_front"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:foregroundGravity="center|center_vertical|center_horizontal|fill|bottom"
+        android:focusableInTouchMode="true"
+        android:background="@color/transparent"
+        android:scaleType="centerInside"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/plus_btn"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:focusable="true"
+            android:layout_margin="10dp" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
